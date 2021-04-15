@@ -1,0 +1,267 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.botWebChat {
+  padding: 0px !important;
+}
+
+.headerIcon {
+  font-size: 14px !important;
+  font-weight: bold !important;
+  float: right !important;
+}
+
+.container {
+  padding: 0 !important;
+  margin: 0 !important;   
+}
+
+.row {
+  @include ms-Grid-row;
+  @include ms-fontColor-black;
+  background-color: $ms-color-white;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.column {
+  @include ms-Grid-col;
+  @include ms-lg10;
+  @include ms-xl8;
+  @include ms-xlPush2;
+  @include ms-lgPush1;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.colMd4 {
+  width: 33% !important;
+  float: left !important;
+}
+
+.colClear {
+  clear: both !important;
+}
+
+.title {
+  @include ms-font-xl;
+  @include ms-fontColor-blue;
+}
+
+.subTitle {
+  @include ms-font-l;
+  @include ms-fontColor-blue;
+}
+
+.description {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 17px;
+}
+
+.button {
+  // Our button
+  text-decoration: none;
+  height: 32px;
+
+  // Primary Button
+  min-width: 80px;
+  background-color:#1d3469;
+  border-color: $ms-color-themePrimary;
+  color: $ms-color-white;
+
+  // Basic Button
+  outline: transparent;
+  position: relative;
+  font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: $ms-font-size-m;
+  font-weight: $ms-font-weight-regular;
+  border-width: 0;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+
+  .label {
+    font-weight: $ms-font-weight-semibold;
+    font-size: $ms-font-size-m;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 4px;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+.btnPimary {
+  background-color:#1d3469 !important;
+  color:#fff !important;
+  display: inline-block;  
+  margin: 10px 0px;
+  font-weight: 400;   
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btnPimary > img {
+    max-width: 100px;
+    vertical-align: top;
+}
+
+.btnPimary > span {
+   margin-left: 8px;
+}
+
+.btnLink {
+  text-decoration: underline !important;
+  font-weight: bolder !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 10px 0px;
+  cursor: pointer !important;
+}
+
+.btnLink > img {
+    max-width: 100px;
+    vertical-align: top;
+}
+
+.btnLink > span {
+   margin-left: 8px;
+}
+
+.btnIcon {
+  text-decoration: none !important;
+  font-weight: bolder !important;
+  background-color: transparent !important;
+  border: none !important;
+  margin: 10px 0px;
+  cursor: pointer !important;
+}
+
+.btnIcon > img {
+    max-width: 100px;
+    vertical-align: top;
+}
+
+.btnIcon > span {
+   margin-left: 8px;
+}
+
+.btnDiv {
+  clear:  both !important;
+}
+
+div[class^="ms-Panel-content"] {
+  padding: 0px !important;
+}
+
+div[class^="modalBody"] > div:first-child {
+    height: 92.9vh !important;
+}
+
+.modalDialog {		
+  margin: 0 !important;
+  height: 100% !important;
+  float: right !important;
+  min-width: 450px !important;
+  width: 100% !important;
+}
+
+.modalHeader {
+  background-color: #1d3469;
+  color: #fff;
+  padding: 10px !important;
+  font-size: 14px;
+  display: block !important;
+  width: 97% !important;
+}
+
+.modalHeader > span {
+  font-size: 16px;
+}
+
+.modalHeader > button {
+  color: #fff!important;
+  line-height: 1;
+  background-color: transparent !important;
+  margin: 0 1px!important;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold !important;
+}
+
+.modalHeader > button > img {
+  width: 23px;
+}
+
+.modalBody {
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+  height: 92%;
+  padding: 0 !important;
+
+  p {
+    text-overflow: clip;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 14px !important;
+  }
+
+  input[type=checkbox], input[type=radio] {
+      label {
+          margin-bottom: 0 !important;
+      }
+  }
+
+  button {
+      font-size: 13px !important;
+      font-weight: bold !important;
+      padding: 6px !important;
+      background-color: white!important;
+      color: rgb(0, 99, 177)!important;
+      cursor: pointer !important;
+  }
+
+  button:hover {
+      color: white!important;
+      background-color: rgb(0, 99, 177)!important;
+  }
+
+  .spinner {
+    background-color: #fff !important;
+    height: 100%;
+    text-align: center;
+  }
+
+  .spinner > img {
+    position: relative;
+    width: 75px;
+    z-index: 25;
+    margin-top: 44%;
+  } 
+}
+
+.modalContent {
+  height: 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  overflow-y: auto !important;
+  background-color: #dfe3ee !important;
+  overflow-x: hidden !important;
+}

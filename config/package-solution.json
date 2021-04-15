@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-react-webchat-client-side-solution",
+    "developer": {
+      "name": "Microsoft",
+      "websiteUrl": "https://microsoft.sharepoint.com",
+      "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+      "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default",
+      "mpnId": ""
+    },
+    "id": "8993d29d-41a8-4135-9195-d5b053b0bb6e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "spfx-bot-token-api",
+        "scope": "user_impersonation"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-react-webchat.sppkg"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "bot-webchat-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/botWebchat/BotWebPart.js",
+          "manifest": "./src/webparts/botWebchat/BotWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {   
+  },
+  "localizedResources": {
+    "BotWebPartStrings": "lib/webparts/botWebchat/loc/{locale}.js"
+  }
+}

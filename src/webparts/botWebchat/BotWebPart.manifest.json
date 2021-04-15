@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "be5d3f2b-6035-47c9-9b8a-d30563ff30cc",
+  "alias": "BotWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "title": {
+        "default": "Bot - Webchat"
+      },
+      "description": {
+        "default": "Bot - Webchat"
+      },
+      "officeFabricIconFontName": "ChatBot",
+      "properties": {        
+        "botButtonText": "Bot - Webchat",
+        "chatWindowHeaderTitle": "Bot - Webchat",
+        "description": "Modern sharepoint online webpart to integrate the botframework webchat",
+        "botAuthenticationType": "DL-Secret",
+        "botDirectLineSecret":"<<To be replaced with bot directline secret>>",
+        "botDirectLineTokenApiUrl": "https://directline.botframework.com/v3/directline/tokens/generate",
+        "botTokenApiResourceId": "<<To be replaced with bot token api's AAD app Id>>",
+        "botTokenApiUrl": "<<To be replaced with Custom bot token Api secured by AAD>>",
+        "botAvatarUrl": "https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg?view=azure-bot-service-4.0",
+        "avatarSize": 30,
+        "botAvatarInitials": "WC",
+        "backgroundColor": "#dfe3ee",
+        "bubbleBackground": "#ffffff",
+        "bubbleBorderRadius": 7,
+        "bubbleFromUserBackground": "#1d3469",
+        "bubbleFromUserBorderRadius": 7,
+        "bubbleFromUserTextColor": "#fff",
+        "suggestedActionBackground": "#0078D7",
+        "suggestedActionTextColor": "#fff",
+        "sendBoxTextWrap": true,
+        "hideScrollToEndButton": true
+      }
+    }
+  ]
+}
