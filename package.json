@@ -27,7 +27,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "rimraf": "^3.0.2",
-    "ua-parser-js": "^0.7.24"
+    "ua-parser-js": "^0.7.33"
   },
   "resolutions": {
     "@types/react": "16.8.8"
